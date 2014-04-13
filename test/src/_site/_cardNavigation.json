@@ -1,0 +1,6 @@
+[
+    { "title": "Github", "link": "https://github.com/" },
+    { "title": "Twitter", "link": "https://twitter.com/" },
+    { "title": "Blog", "link": "/blog" },
+    { "title": "Email", "link": "mailto:test@example.com" }
+]

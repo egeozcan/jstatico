@@ -1,0 +1,28 @@
+{% extends "_layouts/_main.html" %}
+
+{% block viewport %}
+<meta name="viewport" content="width=800, user-scalable=no" />
+{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="/css/normalize.css">
+<link rel="stylesheet" href="/css/blog.css">
+<link rel="stylesheet" href="/css/sunburst.css">
+{% endblock %}
+
+{% block content %}
+
+{% include "_layouts/partials/_blogHead.html" %}
+
+{% for post in meta.posts -%}
+	<section>
+		<h1>
+			<a href="/blog/post/{{ post.name }}">
+				{{ post.meta.title }}
+			</a>
+			<small>{{ post.meta.ago }}</small>
+		</h1> 
+		<article>{{ post._contents }}</article>
+	</section>
+{%- endfor %}
+{% endblock %}

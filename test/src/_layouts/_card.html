@@ -1,0 +1,28 @@
+{% extends "_layouts._main.html" %}
+
+{% block content %}
+<div id="wrapper">
+    <article class="container">
+        <header>
+            <h1>{{ meta.salutation }}</h1>
+        </header>
+        <article>
+            <p>{{ body }}</p>
+        </article>
+        <footer>
+            {{ meta.copyright }}
+        </footer>
+        <nav>
+            <ul>
+                {% for link in _site.cardNavigation %}
+                    <li><a{{ " id='" + link.id + "'" if link.id else '' }} href="{{ link.link }}">{{ link.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </nav>
+    </article>
+    <aside>
+        {% if meta.lang != "en" %}<a href="/">English</a>{% endif %}
+        {% if meta.lang != "de" %}<a href="/de">Deutsch</a>{% endif %}
+    </aside>
+</div>
+{% endblock %}

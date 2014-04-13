@@ -6,6 +6,7 @@ pids
 lib-cov
 coverage
 test/output
+test/result
 node_modules
 .sass-cache
 .idea

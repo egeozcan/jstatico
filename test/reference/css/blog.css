@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    color: #333;
+}
+
+body {
+    background: #eee;
+}
+
+body > h1 {
+	text-align: center;
+}
+
+body > h1 small {
+	display: block;
+	font-size: 0.4em;
+	margin: 5px;
+}
+
+section {
+    background: #fff;
+    width: 800px;
+    padding: 10px 40px;
+    margin: 10px auto 25px;
+	border-radius: 21px;
+	box-shadow: 2px 2px #ddd;
+}
+
+section h1 {
+    font-size: 1.5em
+}
+
+section small {
+    font-size: 0.5em;
+    color: #aaa;
+    display: block;
+    margin: 2px 0;
+}
+
+section h1 a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav {
+    margin: 0 auto;
+    width: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	-moz-flex-flow: row wrap;
+	flex-flow: row wrap;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	justify-content:center;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    -webkit-flex: 0 1 50px;
+		-moz-flex: 0 1 50px;
+		flex: 0 1 50px;
+}
+
+nav li a {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #fff;
+    border-radius: 5px;
+    margin: 5px 5px;
+    text-decoration: none;
+}
+
+nav li a.page-link {
+	box-shadow: 2px 2px #ddd;
+}
+
+pre {
+	padding: 31px;
+	background: #fafafa;
+	border-radius: 17px;
+}
+
+pre code {
+	font-size: 13px;
+	padding: 0px;
+}
+
+table {
+	width: 70%;
+	min-width: 400px;
+	margin: 0 auto;
+}
+
+th, td {
+	text-align: left;
+	padding: 4px 7px;
+}
+
+tbody tr:nth-child(odd) {
+	background-color:#fafafa;
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="{% if description %}{{ description }}{% elif meta.description %}{{ meta.description }}{% else %}Yet Another Website{% endif %}">
+    <title>{% if title %}{{ title }}{% elif meta.title %}{{ meta.title }}{% else %}John Doe{% endif %}</title>
+    {% block viewport %}
+    <meta name="viewport" content="width=670, user-scalable=no" />
+		{% endblock %}
+    {% block styles %}
+	    <link rel="stylesheet" href="/css/normalize.css"/>
+	    <link rel="stylesheet" href="/css/card.css"/>
+		{% endblock %}
+		{% block head %}
+		{% endblock %}
+</head>
+<body lang="{% if lang %}{{ lang }}{% elif meta.lang %}{{ meta.lang }}{% else %}en{% endif %}">
+{% block content %}
+{% endblock %}
+</body>
+</html>
