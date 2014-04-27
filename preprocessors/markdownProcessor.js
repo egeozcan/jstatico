@@ -19,8 +19,8 @@ module.exports = {
         }
         var parsed = yaml.safeLoad(parts[1]);
 		var fullName = this.name.split(".")[0].split("-");
-		parsed.title = fullName.slice(3).map(capitaliseFirstLetter).join(" ");
-		parsed.ago = moment(fullName.slice(0,3).join("-")).fromNow();
+		parsed.title = parsed.title || fullName.slice(3).map(capitaliseFirstLetter).join(" ");
+		parsed.ago = moment(parsed.time || fullName.slice(0,3).join("-")).fromNow();
         var result = new FileResult(this.path.replace(/\.md$/, ".html").replace(fullName.slice(0,3).join("-") + "-", ""), parsed);
         marked.setOptions({
             renderer: new marked.Renderer(),
