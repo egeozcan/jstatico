@@ -7,7 +7,7 @@ puts the output in the destination directory.
 
 and then
 
-    jstatico inputDirectory outputDirectory
+    jstatico /path/to/inputDirectory /path/to/outputDirectory
 
 to run tests
 
