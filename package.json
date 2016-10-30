@@ -7,7 +7,10 @@
     "test": "node test/test.js"
   },
   "keywords": [
-    "static", "generator", "file-tree", "transformation"
+    "static",
+    "generator",
+    "file-tree",
+    "transformation"
   ],
   "author": "Yavuz Ege Özcan",
   "licenses": [
@@ -16,18 +19,17 @@
       "url": "https://github.com/bower/bower/blob/master/LICENSE"
     }
   ],
-  "homepage" : "https://github.com/egeozcan/jstatico",
+  "homepage": "https://github.com/egeozcan/jstatico",
   "repository": {
     "type": "git",
     "url": "git://github.com/egeozcan/jstatico.git"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=6.0.0"
   },
   "dependencies": {
-    "node.extend": "~1.0.10",
     "mkdirp": "~0.3.5",
-    "nunjucks": "~1.0.4",
+    "nunjucks": "^2.4.3",
     "markdown-to-json": "~0.4.2",
     "marked": "~0.3.2",
     "front-matter": "~0.2.0",
@@ -35,14 +37,16 @@
     "moment": "~2.5.1",
     "html-minifier": "~0.5.6",
     "bunyan": "~0.22.2",
-    "iconv-lite": "~0.2.11",
+    "iconv-lite": "^0.4.0",
     "highlight.js": "~8.0.0"
   },
   "bin": {
     "jstatico": "renderTree.js"
   },
-  "bin": {
-    "jstatico": "renderTree.js"
-  },
-  "preferGlobal": true
+  "preferGlobal": true,
+  "devDependencies": {
+    "@types/iconv-lite": "0.0.1",
+    "@types/mkdirp": "^0.3.29",
+    "@types/node": "^6.0.46"
+  }
 }
