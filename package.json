@@ -1,48 +1,44 @@
 {
   "name": "jstatico",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "As simple as static web site generation gets.",
-  "main": "dirTree.js",
+  "type": "module",
+  "main": "src/index.ts",
   "scripts": {
-    "test": "node test/test.js"
+    "test": "bun test",
+    "build": "bun run src/cli.ts",
+    "typecheck": "tsc --noEmit"
   },
   "keywords": [
-    "static", "generator", "file-tree", "transformation"
+    "static",
+    "generator",
+    "file-tree",
+    "transformation",
+    "bun",
+    "typescript"
   ],
-  "author": "Yavuz Ege Özcan",
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/bower/bower/blob/master/LICENSE"
-    }
-  ],
-  "homepage" : "https://github.com/egeozcan/jstatico",
+  "author": "Yavuz Ege Ozcan",
+  "license": "MIT",
+  "homepage": "https://github.com/egeozcan/jstatico",
   "repository": {
     "type": "git",
     "url": "git://github.com/egeozcan/jstatico.git"
   },
-  "engines": {
-    "node": ">=0.10.0"
+  "bin": {
+    "jstatico": "src/cli.ts"
   },
   "dependencies": {
-    "node.extend": "~1.0.10",
-    "mkdirp": "~0.3.5",
-    "nunjucks": "~1.0.4",
-    "markdown-to-json": "~0.4.2",
-    "marked": "~0.3.2",
-    "front-matter": "~0.2.0",
-    "js-yaml": "~3.0.2",
-    "moment": "~2.5.1",
-    "html-minifier": "~0.5.6",
-    "bunyan": "~0.22.2",
-    "iconv-lite": "~0.2.11",
-    "highlight.js": "~8.0.0"
+    "nunjucks": "^3.2.4",
+    "marked": "^15.0.6",
+    "js-yaml": "^4.1.0",
+    "html-minifier-terser": "^7.2.0",
+    "highlight.js": "^11.11.1"
   },
-  "bin": {
-    "jstatico": "renderTree.js"
-  },
-  "bin": {
-    "jstatico": "renderTree.js"
-  },
-  "preferGlobal": true
+  "devDependencies": {
+    "@types/html-minifier-terser": "^7.0.2",
+    "@types/js-yaml": "^4.0.9",
+    "@types/nunjucks": "^3.2.6",
+    "bun-types": "^1.1.43",
+    "typescript": "^5.7.3"
+  }
 }
