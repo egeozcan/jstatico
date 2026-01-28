@@ -11,6 +11,7 @@ export interface FileMeta {
 }
 
 export interface Preprocessor {
+  name?: string;
   match: RegExp;
   parse: (this: FileResult) => FileResult | FileResultArray | Record<string, unknown>;
 }
@@ -18,11 +19,13 @@ export interface Preprocessor {
 export type ProcessResult = string | FileResult | FileResultArray | null;
 
 export interface Postprocessor {
+  name?: string;
   match: RegExp;
   process: (this: FileResult, context: TreeContext) => ProcessResult | Promise<ProcessResult>;
 }
 
 export interface Writer {
+  name?: string;
   match: RegExp;
   write: (this: FileResult, homePath: string, destinationPath: string) => void;
 }
