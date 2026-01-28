@@ -80,3 +80,11 @@ cleanurl: true                 # page.html → page/index.html
 - `test/jstatico.test.ts` - Integration test comparing output against `test/reference/`
 - `test/src/` - Test input site with markdown, layouts, data files, custom processor
 - `test/reference/` - Expected output (tests compare byte-by-byte)
+
+### Custom Processors
+
+Users can add custom processors via:
+1. **Auto-discovery**: `_processors/{preprocessors,postprocessors,writers}/` directories
+2. **Builder API**: `jstatico(src, dest).addPreprocessor(...).generate()`
+
+Precedence: programmatic → auto-discovered → built-ins

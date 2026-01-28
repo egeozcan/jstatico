@@ -26,6 +26,50 @@ Type check:
 
     bun run typecheck
 
+## Custom Processors
+
+### Auto-Discovery
+
+Create a `_processors/` directory in your source folder:
+
+```
+site/
+├── _processors/
+│   ├── preprocessors/
+│   │   └── myProcessor.ts
+│   ├── postprocessors/
+│   │   └── myPostprocessor.js
+│   └── writers/
+│       └── myWriter.ts
+```
+
+Processors are loaded alphabetically and run before built-ins.
+
+**Preprocessor example:**
+
+```typescript
+import type { Preprocessor } from "jstatico";
+
+export const processor: Preprocessor = {
+  match: /\.scss$/,
+  parse() {
+    // Transform this.contents, return new FileResult
+  }
+};
+```
+
+### Programmatic API
+
+```typescript
+import jstatico from "jstatico/builder";
+
+await jstatico("./src", "./dist")
+  .addPreprocessor({ match: /\.scss$/, parse() { ... } })
+  .disableBuiltinPreprocessor("markdown")
+  .skipAutoDiscovery()
+  .generate();
+```
+
 That's it!
 
 I use this to generate egeozcan.com
@@ -34,7 +78,6 @@ An example site is included. See the folder named "test".
 
 TODO
 ----
-* Add support for custom processors and preprocessors
 * Add documentation for custom generators (example available in test/src/blog)
 
 License: MIT
