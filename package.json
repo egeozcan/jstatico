@@ -1,6 +1,6 @@
 {
   "name": "jstatico",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "As simple as static web site generation gets.",
   "type": "module",
   "main": "./src/index.ts",
