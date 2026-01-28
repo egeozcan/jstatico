@@ -1,0 +1,18 @@
+{% extends "_layouts._base.html" %}
+
+{% block content %}
+<div class="home-layout">
+    <header class="hero">
+        <h1>jstatico</h1>
+        <p class="tagline">Simple static site generation</p>
+        <pre class="install-command"><code>bun add jstatico</code></pre>
+        <a href="/getting-started/" class="cta">Get Started</a>
+    </header>
+    <main class="features">
+        {{ body }}
+    </main>
+    <footer class="home-footer">
+        <p>MIT License &middot; <a href="https://github.com/egeozcan/jstatico">GitHub</a></p>
+    </footer>
+</div>
+{% endblock %}
