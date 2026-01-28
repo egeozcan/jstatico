@@ -1,17 +1,30 @@
 jstatico
 ==========================
-creates a json tree from a directory, applies the built-in filters and
-puts the output in the destination directory.
+As simple as static web site generation gets.
 
-    npm install jstatico
+Creates a JSON tree from a directory, applies built-in filters (Markdown, Nunjucks templating, syntax highlighting), and outputs to a destination directory.
 
-and then
+## Requirements
+
+- [Bun](https://bun.sh) runtime
+
+## Installation
+
+    bun install jstatico
+
+## Usage
 
     jstatico /path/to/inputDirectory /path/to/outputDirectory
 
-to run tests
+## Development
 
-    npm test
+Run tests:
+
+    bun test
+
+Type check:
+
+    bun run typecheck
 
 That's it!
 
