@@ -1,5 +1,6 @@
 ---
 layout: _layouts._doc.html
+cleanurl: true
 title: Working with Data
 description: Using JSON files for site-wide data
 currentPath: /guides/working-with-data/

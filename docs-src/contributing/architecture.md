@@ -1,5 +1,6 @@
 ---
 layout: _layouts._doc.html
+cleanurl: true
 title: Architecture
 description: Deep dive into jstatico's architecture
 currentPath: /contributing/architecture/

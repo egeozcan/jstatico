@@ -1,5 +1,6 @@
 ---
 layout: _layouts._doc.html
+cleanurl: true
 title: Auto-Discovery
 description: Automatically load processors from _processors directory
 currentPath: /processors/auto-discovery/

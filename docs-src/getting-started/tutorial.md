@@ -1,5 +1,6 @@
 ---
 layout: _layouts._doc.html
+cleanurl: true
 title: Tutorial
 description: Build a complete blog with jstatico
 currentPath: /getting-started/tutorial/

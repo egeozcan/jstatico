@@ -1,5 +1,6 @@
 ---
 layout: _layouts._doc.html
+cleanurl: true
 title: Quick Start
 description: Create your first jstatico site in 5 minutes
 currentPath: /getting-started/quick-start/

@@ -1,5 +1,6 @@
 ---
 layout: _layouts._doc.html
+cleanurl: true
 title: Programmatic API
 description: Using jstatico in code
 currentPath: /api/programmatic/

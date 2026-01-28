@@ -1,5 +1,6 @@
 ---
 layout: _layouts._doc.html
+cleanurl: true
 title: Custom Processors
 description: Writing your own processors
 currentPath: /processors/custom-processors/

@@ -1,5 +1,6 @@
 ---
 layout: _layouts._doc.html
+cleanurl: true
 title: Tree Structure
 description: How files become a navigable tree
 currentPath: /concepts/tree-structure/

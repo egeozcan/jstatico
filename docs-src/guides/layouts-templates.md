@@ -1,5 +1,6 @@
 ---
 layout: _layouts._doc.html
+cleanurl: true
 title: Layouts & Templates
 description: Creating reusable layouts with Nunjucks
 currentPath: /guides/layouts-templates/

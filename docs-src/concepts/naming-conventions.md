@@ -1,5 +1,6 @@
 ---
 layout: _layouts._doc.html
+cleanurl: true
 title: Naming Conventions
 description: Special files and directories in jstatico
 currentPath: /concepts/naming-conventions/

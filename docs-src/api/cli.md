@@ -1,5 +1,6 @@
 ---
 layout: _layouts._doc.html
+cleanurl: true
 title: CLI Reference
 description: Command line interface for jstatico
 currentPath: /api/cli/

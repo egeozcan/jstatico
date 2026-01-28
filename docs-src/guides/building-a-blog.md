@@ -1,5 +1,6 @@
 ---
 layout: _layouts._doc.html
+cleanurl: true
 title: Building a Blog
 description: Create a blog with posts and pagination
 currentPath: /guides/building-a-blog/

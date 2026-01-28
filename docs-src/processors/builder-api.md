@@ -1,5 +1,6 @@
 ---
 layout: _layouts._doc.html
+cleanurl: true
 title: Builder API
 description: Programmatic configuration with the builder pattern
 currentPath: /processors/builder-api/

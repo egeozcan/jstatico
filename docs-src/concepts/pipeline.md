@@ -1,5 +1,6 @@
 ---
 layout: _layouts._doc.html
+cleanurl: true
 title: Pipeline
 description: How jstatico processes files
 currentPath: /concepts/pipeline/

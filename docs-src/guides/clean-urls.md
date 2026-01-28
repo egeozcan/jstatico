@@ -1,5 +1,6 @@
 ---
 layout: _layouts._doc.html
+cleanurl: true
 title: Clean URLs
 description: Configure pretty URLs without .html extension
 currentPath: /guides/clean-urls/

@@ -1,5 +1,6 @@
 ---
 layout: _layouts._doc.html
+cleanurl: true
 title: Frontmatter
 description: Adding metadata to pages with YAML frontmatter
 currentPath: /concepts/frontmatter/

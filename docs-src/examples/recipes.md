@@ -1,5 +1,6 @@
 ---
 layout: _layouts._doc.html
+cleanurl: true
 title: Recipes
 description: Copy-paste solutions for common tasks
 currentPath: /examples/recipes/

@@ -1,5 +1,6 @@
 ---
 layout: _layouts._doc.html
+cleanurl: true
 title: Built-in Processors
 description: Processors included with jstatico
 currentPath: /processors/built-in/
