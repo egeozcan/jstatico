@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{% if meta.description %}{{ meta.description }}{% else %}jstatico - Simple static site generator{% endif %}">
+    <title>{% if meta.title %}{{ meta.title }} - jstatico{% else %}jstatico{% endif %}</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+{% block content %}{% endblock %}
+</body>
+</html>
