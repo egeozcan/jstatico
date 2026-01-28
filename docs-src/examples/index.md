@@ -20,4 +20,4 @@ The jstatico repository includes a complete example site in `test/src/`:
 
 Common patterns and solutions:
 
-- [Recipes](/examples/recipes/) - Copy-paste solutions for common tasks
+- [Recipes](/jstatico/examples/recipes/) - Copy-paste solutions for common tasks

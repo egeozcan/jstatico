@@ -29,7 +29,7 @@ jstatico includes processors for common tasks:
 
 Extend jstatico with your own processors:
 
-- [Built-in Processors](/processors/built-in/) - What's included
-- [Custom Processors](/processors/custom-processors/) - Write your own
-- [Auto-Discovery](/processors/auto-discovery/) - `_processors/` directory
-- [Builder API](/processors/builder-api/) - Programmatic configuration
+- [Built-in Processors](/jstatico/processors/built-in/) - What's included
+- [Custom Processors](/jstatico/processors/custom-processors/) - Write your own
+- [Auto-Discovery](/jstatico/processors/auto-discovery/) - `_processors/` directory
+- [Builder API](/jstatico/processors/builder-api/) - Programmatic configuration

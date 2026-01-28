@@ -74,4 +74,4 @@ Access the blog tree in templates:
 
 ## Dynamic Pagination
 
-For pagination, create a `*.processor.js` file. See [Custom Processors](/processors/custom-processors/) for details.
+For pagination, create a `*.processor.js` file. See [Custom Processors](/jstatico/processors/custom-processors/) for details.

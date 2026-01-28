@@ -116,7 +116,7 @@ Content:
 ```markdown
 # Welcome to My Blog
 
-Check out my [latest posts](/blog/).
+Check out my [latest posts](/jstatico/blog/).
 ```
 
 ## Step 6: Build and Test
@@ -129,5 +129,5 @@ Open `dist/index.html` to see your blog.
 
 ## Next Steps
 
-- Learn about [Core Concepts](/concepts/)
-- Explore [Custom Processors](/processors/custom-processors/)
+- Learn about [Core Concepts](/jstatico/concepts/)
+- Explore [Custom Processors](/jstatico/processors/custom-processors/)

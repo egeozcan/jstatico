@@ -3,14 +3,14 @@
 {% block content %}
 <div class="doc-layout">
     <nav class="sidebar">
-        <a href="/" class="logo">jstatico</a>
+        <a href="{{ _site.config.baseUrl }}/" class="logo">jstatico</a>
         {% for section in _site.navigation.sections %}
         <div class="nav-section">
             <h3>{{ section.title }}</h3>
             <ul>
                 {% for page in section.pages %}
                 <li{% if page.path == meta.currentPath %} class="active"{% endif %}>
-                    <a href="{{ page.path }}">{{ page.title }}</a>
+                    <a href="{{ _site.config.baseUrl }}{{ page.path }}">{{ page.title }}</a>
                 </li>
                 {% endfor %}
             </ul>

@@ -84,4 +84,4 @@ interface Writer {
 
 ## Registration
 
-See [Auto-Discovery](/processors/auto-discovery/) or [Builder API](/processors/builder-api/) for how to register processors.
+See [Auto-Discovery](/jstatico/processors/auto-discovery/) or [Builder API](/jstatico/processors/builder-api/) for how to register processors.

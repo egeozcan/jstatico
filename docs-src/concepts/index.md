@@ -30,7 +30,7 @@ Special prefixes determine behavior:
 
 ## Learn More
 
-- [Pipeline](/concepts/pipeline/) - How files flow through the system
-- [Tree Structure](/concepts/tree-structure/) - Accessing data in templates
-- [Frontmatter](/concepts/frontmatter/) - Page metadata
-- [Naming Conventions](/concepts/naming-conventions/) - Special files and directories
+- [Pipeline](/jstatico/concepts/pipeline/) - How files flow through the system
+- [Tree Structure](/jstatico/concepts/tree-structure/) - Accessing data in templates
+- [Frontmatter](/jstatico/concepts/frontmatter/) - Page metadata
+- [Naming Conventions](/jstatico/concepts/naming-conventions/) - Special files and directories

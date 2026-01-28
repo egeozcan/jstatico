@@ -3,62 +3,61 @@
     {
       "title": "Getting Started",
       "pages": [
-        { "title": "Introduction", "path": "/getting-started/" },
-        { "title": "Installation", "path": "/getting-started/installation/" },
-        { "title": "Quick Start", "path": "/getting-started/quick-start/" }
+        { "title": "Installation", "path": "/getting-started/" },
+        { "title": "Quick Start", "path": "/getting-started/quick-start/" },
+        { "title": "Tutorial", "path": "/getting-started/tutorial/" }
       ]
     },
     {
       "title": "Core Concepts",
       "pages": [
-        { "title": "Directory Structure", "path": "/concepts/directory-structure/" },
-        { "title": "File Processing", "path": "/concepts/file-processing/" },
-        { "title": "Templates", "path": "/concepts/templates/" },
-        { "title": "Frontmatter", "path": "/concepts/frontmatter/" }
+        { "title": "Overview", "path": "/concepts/" },
+        { "title": "Pipeline", "path": "/concepts/pipeline/" },
+        { "title": "Tree Structure", "path": "/concepts/tree-structure/" },
+        { "title": "Frontmatter", "path": "/concepts/frontmatter/" },
+        { "title": "Naming Conventions", "path": "/concepts/naming-conventions/" }
+      ]
+    },
+    {
+      "title": "Guides",
+      "pages": [
+        { "title": "Overview", "path": "/guides/" },
+        { "title": "Layouts & Templates", "path": "/guides/layouts-templates/" },
+        { "title": "Working with Data", "path": "/guides/working-with-data/" },
+        { "title": "Building a Blog", "path": "/guides/building-a-blog/" },
+        { "title": "Clean URLs", "path": "/guides/clean-urls/" }
       ]
     },
     {
       "title": "Processors",
       "pages": [
         { "title": "Overview", "path": "/processors/" },
-        { "title": "Preprocessors", "path": "/processors/preprocessors/" },
-        { "title": "Postprocessors", "path": "/processors/postprocessors/" },
-        { "title": "Writers", "path": "/processors/writers/" },
-        { "title": "Custom Processors", "path": "/processors/custom/" }
-      ]
-    },
-    {
-      "title": "Built-in Processors",
-      "pages": [
-        { "title": "Markdown", "path": "/builtin/markdown/" },
-        { "title": "JSON Data", "path": "/builtin/json/" },
-        { "title": "HTML Templates", "path": "/builtin/html/" },
-        { "title": "Page Generators", "path": "/builtin/page-generators/" }
+        { "title": "Built-in Processors", "path": "/processors/built-in/" },
+        { "title": "Custom Processors", "path": "/processors/custom-processors/" },
+        { "title": "Auto-Discovery", "path": "/processors/auto-discovery/" },
+        { "title": "Builder API", "path": "/processors/builder-api/" }
       ]
     },
     {
       "title": "API Reference",
       "pages": [
+        { "title": "Overview", "path": "/api/" },
         { "title": "CLI", "path": "/api/cli/" },
-        { "title": "Builder API", "path": "/api/builder/" },
-        { "title": "FileResult", "path": "/api/file-result/" },
-        { "title": "TreeMap", "path": "/api/tree-map/" }
+        { "title": "Programmatic API", "path": "/api/programmatic/" }
       ]
     },
     {
-      "title": "Guides",
+      "title": "Examples",
       "pages": [
-        { "title": "Blog Setup", "path": "/guides/blog/" },
-        { "title": "Multi-language Sites", "path": "/guides/i18n/" },
-        { "title": "Deployment", "path": "/guides/deployment/" }
+        { "title": "Overview", "path": "/examples/" },
+        { "title": "Recipes", "path": "/examples/recipes/" }
       ]
     },
     {
-      "title": "Resources",
+      "title": "Contributing",
       "pages": [
-        { "title": "Examples", "path": "/examples/" },
-        { "title": "FAQ", "path": "/faq/" },
-        { "title": "Changelog", "path": "/changelog/" }
+        { "title": "How to Contribute", "path": "/contributing/" },
+        { "title": "Architecture", "path": "/contributing/architecture/" }
       ]
     }
   ]

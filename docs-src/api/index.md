@@ -15,7 +15,7 @@ Run jstatico from the command line:
 jstatico <source> <destination>
 ```
 
-See [CLI Reference](/api/cli/) for details.
+See [CLI Reference](/jstatico/api/cli/) for details.
 
 ## Programmatic
 
@@ -27,4 +27,4 @@ import { generate } from 'jstatico';
 await generate('src', 'dist');
 ```
 
-See [Programmatic API](/api/programmatic/) for the full API.
+See [Programmatic API](/jstatico/api/programmatic/) for the full API.

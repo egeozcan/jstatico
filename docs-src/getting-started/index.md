@@ -39,4 +39,4 @@ You should see the usage information.
 
 ## Next Steps
 
-Continue to [Quick Start](/getting-started/quick-start/) to create your first site.
+Continue to [Quick Start](/jstatico/getting-started/quick-start/) to create your first site.

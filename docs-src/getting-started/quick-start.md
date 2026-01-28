@@ -68,4 +68,4 @@ Open `dist/index.html` in your browser. You should see your rendered page.
 
 ## Next Steps
 
-Follow the [Tutorial](/getting-started/tutorial/) to build a complete blog.
+Follow the [Tutorial](/jstatico/getting-started/tutorial/) to build a complete blog.

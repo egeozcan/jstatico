@@ -42,4 +42,4 @@ Writers handle:
 
 ## Customization
 
-Each phase can be extended with custom processors. See [Custom Processors](/processors/custom-processors/).
+Each phase can be extended with custom processors. See [Custom Processors](/jstatico/processors/custom-processors/).
