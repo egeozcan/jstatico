@@ -8,7 +8,16 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 bun test              # Run tests
 bun run typecheck     # TypeScript type checking
 bun run src/cli.ts <source> <dest>  # Run generator directly
+bun run docs:build    # Build documentation site
+bun run docs:dev      # Build and serve docs locally
 ```
+
+## Documentation Site
+
+The `docs-src/` directory contains the documentation site source, built with jstatico itself (dogfooding).
+
+- Built automatically via GitHub Actions on push to master
+- Deployed to GitHub Pages at https://egeozcan.github.io/jstatico/
 
 ## Architecture Overview
 
