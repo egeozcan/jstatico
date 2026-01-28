@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "As simple as static web site generation gets.",
   "type": "module",
-  "main": "src/index.ts",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
   "exports": {
     ".": {
       "import": "./src/index.ts",
@@ -14,37 +15,50 @@
       "types": "./src/builder.ts"
     }
   },
+  "bin": {
+    "jstatico": "./src/cli.ts"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "test": "bun test",
-    "build": "bun run src/cli.ts",
     "typecheck": "tsc --noEmit",
     "docs:build": "bun run src/cli.ts docs-src docs-build",
     "docs:dev": "bun run src/cli.ts docs-src docs-build && bunx serve docs-build"
   },
   "keywords": [
     "static",
+    "static-site-generator",
+    "ssg",
     "generator",
-    "file-tree",
-    "transformation",
+    "markdown",
+    "nunjucks",
+    "templates",
     "bun",
     "typescript"
   ],
   "author": "Yavuz Ege Ozcan",
   "license": "MIT",
-  "homepage": "https://github.com/egeozcan/jstatico",
+  "homepage": "https://egeozcan.github.io/jstatico/",
   "repository": {
     "type": "git",
-    "url": "git://github.com/egeozcan/jstatico.git"
+    "url": "git+https://github.com/egeozcan/jstatico.git"
   },
-  "bin": {
-    "jstatico": "src/cli.ts"
+  "bugs": {
+    "url": "https://github.com/egeozcan/jstatico/issues"
+  },
+  "engines": {
+    "bun": ">=1.0.0"
   },
   "dependencies": {
-    "nunjucks": "^3.2.4",
-    "marked": "^15.0.6",
-    "js-yaml": "^4.1.0",
+    "highlight.js": "^11.11.1",
     "html-minifier-terser": "^7.2.0",
-    "highlight.js": "^11.11.1"
+    "js-yaml": "^4.1.0",
+    "marked": "^15.0.6",
+    "nunjucks": "^3.2.4"
   },
   "devDependencies": {
     "@types/html-minifier-terser": "^7.0.2",
