@@ -43,12 +43,14 @@ Create `src/_layouts/_main.html`:
 
 Create `src/index.md`:
 
-```markdown
----
+```yaml
 layout: _layouts._main.html
 title: My Site
----
+```
 
+Then add your content below the frontmatter:
+
+```markdown
 # Welcome
 
 This is my first jstatico site!

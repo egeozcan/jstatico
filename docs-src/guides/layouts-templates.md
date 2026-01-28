@@ -45,10 +45,8 @@ Create a child layout that extends the base:
 Reference layouts in frontmatter with dots (not slashes):
 
 ```yaml
----
 layout: _layouts._post.html
 title: My Post
----
 ```
 
 ## Template Variables

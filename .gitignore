@@ -14,4 +14,4 @@ node_modules
 *.suo
 bower_components
 .tmp
-.worktrees
+.worktreesdocs-build/

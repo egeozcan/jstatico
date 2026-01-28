@@ -21,11 +21,9 @@ With clean URLs enabled:
 Add `cleanurl: true` to your frontmatter:
 
 ```yaml
----
 layout: _layouts._main.html
 title: About
 cleanurl: true
----
 ```
 
 ## Global Clean URLs

@@ -86,32 +86,34 @@ Create `src/_site/_config.json`:
 
 Create `src/blog/2024-01-15-hello-world.md`:
 
-```markdown
----
+The file should have YAML frontmatter at the top, followed by content:
+
+```yaml
 layout: _layouts._post.html
 title: Hello World
 date: 2024-01-15
----
+```
 
-Welcome to my blog! This is my first post.
+Then add your post content below the frontmatter delimiters.
 
-## Code Example
+Example post content with a code block:
 
 ```javascript
 console.log("Hello from jstatico!");
-```
 ```
 
 ## Step 5: Homepage
 
 Create `src/index.md`:
 
-```markdown
----
+```yaml
 layout: _layouts._base.html
 title: Home
----
+```
 
+Content:
+
+```markdown
 # Welcome to My Blog
 
 Check out my [latest posts](/blog/).

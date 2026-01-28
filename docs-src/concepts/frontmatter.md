@@ -9,15 +9,15 @@ Frontmatter is YAML at the top of a file that defines page metadata.
 
 ## Basic Syntax
 
-```markdown
----
+Frontmatter is enclosed between two lines of three dashes. Example:
+
+```yaml
 layout: _layouts._main.html
 title: Page Title
 description: Page description for SEO
----
-
-Your content starts here.
 ```
+
+Place this YAML between `---` delimiters at the very top of your file, then add your content below.
 
 ## Built-in Properties
 
@@ -33,7 +33,6 @@ Your content starts here.
 Add any properties you need:
 
 ```yaml
----
 layout: _layouts._post.html
 title: My Post
 date: 2024-01-15
@@ -41,7 +40,6 @@ author: Jane Doe
 tags:
   - javascript
   - tutorial
----
 ```
 
 Access them in templates:

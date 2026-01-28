@@ -47,15 +47,13 @@ Create posts with date-prefixed filenames:
 
 `blog/2024-01-15-first-post.md`:
 
-```markdown
----
+```yaml
 layout: _layouts._post.html
 title: My First Post
 date: 2024-01-15
----
-
-Content of your post here.
 ```
+
+Then add your post content below the frontmatter.
 
 ## Listing Posts
 
