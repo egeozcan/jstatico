@@ -17,7 +17,9 @@
   "scripts": {
     "test": "bun test",
     "build": "bun run src/cli.ts",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "docs:build": "bun run src/cli.ts docs-src docs-build",
+    "docs:dev": "bun run src/cli.ts docs-src docs-build && bunx serve docs-build"
   },
   "keywords": [
     "static",
