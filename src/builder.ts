@@ -5,8 +5,7 @@ import { writers as builtinWriters } from "./writers";
 import { discoverPreprocessors, discoverPostprocessors, discoverWriters } from "./discovery";
 import { setPreprocessors, setPostprocessors, setWriters } from "./models/FileResult";
 
-// Note: generateInternal will be added in Task 4. For now, we use generate.
-import { generate } from "./index";
+import { generateInternal } from "./index";
 
 export class JstaticoBuilder {
   private sourcePath: string;
@@ -141,9 +140,7 @@ export class JstaticoBuilder {
     setPostprocessors(finalPostprocessors);
     setWriters(finalWriters);
 
-    // TODO: This will be replaced with generateInternal in Task 4
-    // For now, we call generate which will re-set processors (suboptimal but works for tests)
-    await generate(this.sourcePath, this.destPath);
+    await generateInternal(this.sourcePath, this.destPath);
   }
 }
 

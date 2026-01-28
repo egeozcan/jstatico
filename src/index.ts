@@ -5,12 +5,8 @@ import { FileResultArray } from "./models/FileResultArray";
 import { preprocessors } from "./preprocessors";
 import { postprocessors } from "./postprocessors";
 import { writers } from "./writers";
+import { discoverPreprocessors, discoverPostprocessors, discoverWriters } from "./discovery";
 import type { TreeMap, TreeNode } from "./types";
-
-// Initialize processors
-setPreprocessors(preprocessors);
-setPostprocessors(postprocessors);
-setWriters(writers);
 
 // Expose to global scope for backward compatibility with custom processors
 (globalThis as Record<string, unknown>).FileResult = FileResult;
@@ -136,12 +132,32 @@ function writeTree(
   });
 }
 
-export async function generate(homePath: string, destinationPath: string): Promise<void> {
+/**
+ * Internal generate function - processors must be set before calling
+ */
+export async function generateInternal(homePath: string, destinationPath: string): Promise<void> {
   const tree = dirTree(homePath, true);
   if (tree) {
     await processTree(tree, tree);
     writeTree(tree, tree, homePath, destinationPath);
   }
+}
+
+/**
+ * Simple generate function with auto-discovery and built-in processors
+ */
+export async function generate(homePath: string, destinationPath: string): Promise<void> {
+  // Discover custom processors
+  const discoveredPreprocessors = await discoverPreprocessors(homePath);
+  const discoveredPostprocessors = await discoverPostprocessors(homePath);
+  const discoveredWriters = await discoverWriters(homePath);
+
+  // Merge: discovered (first) → built-ins (last)
+  setPreprocessors([...discoveredPreprocessors, ...preprocessors]);
+  setPostprocessors([...discoveredPostprocessors, ...postprocessors]);
+  setWriters([...discoveredWriters, ...writers]);
+
+  await generateInternal(homePath, destinationPath);
 }
 
 export { FileResult } from "./models/FileResult";
