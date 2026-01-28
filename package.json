@@ -4,6 +4,16 @@
   "description": "As simple as static web site generation gets.",
   "type": "module",
   "main": "src/index.ts",
+  "exports": {
+    ".": {
+      "import": "./src/index.ts",
+      "types": "./src/index.ts"
+    },
+    "./builder": {
+      "import": "./src/builder.ts",
+      "types": "./src/builder.ts"
+    }
+  },
   "scripts": {
     "test": "bun test",
     "build": "bun run src/cli.ts",
